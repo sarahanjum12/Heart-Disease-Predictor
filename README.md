@@ -15,6 +15,7 @@ The Heart Disease Predictor System is a web application built to predict the ris
 3.MongoDB: NoSQL database for storing user input and prediction results.
 4.Python: Programming language used for backend development.
 5.scikit-learn: Library used for building and training the SVC model.
+
 #How to Run
 1.Clone the repository:
 git clone <repository_url>

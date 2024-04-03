@@ -19,7 +19,7 @@ The Heart Disease Predictor System is a web application built to predict the ris
 #How to Run
 
 1.Clone the repository:
-git clone <repository_url>
+git clone <https://github.com/sarahanjum12/Heart-Disease-Predictor.git>
 2.Pip nstall the required dependencies:
 3.Start the MongoDB service and ensure it is running.
 

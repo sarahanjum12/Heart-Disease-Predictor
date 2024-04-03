@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Heart Disease Prediction | Sarah Anjum
+  </title>
+
+  <meta name="description" content="Predict the likelihood of heart disease based on various factors."/>
+  <!-- Add some coding keywords below, Ex: (Python, Machine Learning, Flask etc) -->
+  <meta name="keywords" content="Heart Disease Prediction, AI, Machine Learning, Python, Flask" />
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+          <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+          <li class="nav_item"><a href="#predict" class="nav_link">Predict</a></li>
+          <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Heart Disease Predictor</span>
+        </h1>
+        <p>Empowering Health: Predict,Prevent,Protect</p>
+        <a href="#predict" class="btn btn--pink">Predict Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2 class="about__heading">About Heart Disease Prediction</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              Heart disease is a leading cause of death globally. This website provides a tool to predict the likelihood of heart disease based on various factors such as age, gender,RestingECG, cholesterol levels, and more.This data set dates from 1988 and consists of four databases: Cleveland, Hungary, Switzerland, and Long Beach V but modified by adding additional instances through various sources to increase the accuracy of the model and provide better results.All the user inputs and predictions are stored in a database for optimizing the model for better performance.
+            </p>
+            <p>
+              You can learn more about heart disease and its risk factors from reputable sources like the <a href="https://www.heart.org/" target="_blank">American Heart Association</a> and the <a href="https://www.cdc.gov/heartdisease/" target="_blank">CDC</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Predict ***** -->
+
+    <section class="predict" id="predict">
+      <div class="row">
+        <h2>Predict Heart Disease</h2>
+        <div class="predict__form">
+            <form action="/predict" method="post">
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age">
+                <label for="sex">Sex:</label>
+                <input type="number" name="sex" id="sex" min="0" max="1">
+                <label for="cp">Chest Pain Type:</label>
+                <input type="number" name="cp" id="cp">
+                <label for="trestbps">Resting Blood Pressure:</label>
+                <input type="number" name="trestbps" id="trestbps">
+                <label for="chol">Serum Cholestrol in mg/dl:</label>
+                <input type="number" name="chol" id="chol">
+                <label for="fbs">FBS:</label>
+                <input type="number" name="fbs" id="fbs" min="0" max="1">
+                <label for="restecg">Resting ElectroCardiographic results (values 0,1,2):</label>
+                <input type="number" name="restecg" id="restecg">
+                <label for="thalach">Thalach(max hear rate achieved):</label>
+                <input type="number" name="thalach" id="thalach">
+                <label for="exang">Excercise induced angina:</label>
+                <input type="number" name="exang" id="exang" min="0" max="1">
+                <label for="oldpeak">Oldpeak(ST depression induced by exercise relative to rest):</label>
+                <input type="number" name="oldpeak" id="oldpeak" step="0.01">
+                <label for="slope">Slope of the peak exercise ST segment:</label>
+                <input type="number" name="slope" id="slope">
+                <label for="ca">CA(number of colored vessels):</label>
+                <input type="number" name="ca" id="ca">
+                <label for="thal">Thal(0 = normal; 1 = fixed defect; 2 = reversable defect):</label>
+                <input type="number" name="thal" id="thal">
+                <input type="submit" value="Predict" class="predict__button">
+    
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Contact Me</h2>
+      <div class="contact__info">
+        <p>
+          Connect with me on GitHub and LinkedIn, or send me an email.
+        </p>
+        <ul class="contact__links">
+          <li><a href="https://github.com/sarahanjum12" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/sarah-anjum-56a708269/" target="_blank">LinkedIn</a></li>
+          <li><a href="mailto:sarahanjum06@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <p>&copy;Heart Disease Prediction</p>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+</body>
+
+</html>
